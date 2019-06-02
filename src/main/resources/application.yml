@@ -17,3 +17,10 @@ eureka:
 server:
   port: 8090
 
+
+#自定义负载均衡策略 默认是轮询
+PRODUCT:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+
